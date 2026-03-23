@@ -144,15 +144,29 @@ nav {
 } */
 
 @media (max-width: 768px) {
-  .hero-image {
-    position: static;
-    transform: none;
-    margin-top: 2rem;
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-image {
-    width: 200px;
-    height: 200px;
+    position: relative;   /* ❗ absolute hata diya */
+    right: auto;
+    top: auto;
+    transform: none;
+
+    margin-top: 2rem;
+
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-image img {
+    width: 80%;
+    height: 80%;
+    object-position: 50% 10%;
   }
 }
 
