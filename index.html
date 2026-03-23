@@ -70,17 +70,17 @@ nav {
   
   z-index: 2;
 }
+  
 .hero-image img {
   width: 260px;
   border-radius: 16px;
-  border: 2px solid var(--border);
   object-fit: cover;
 
-  /* 🔥 upgrade glow */
-  box-shadow:
-    0 0 20px rgba(56,189,248,0.7),
-    0 0 50px rgba(56,189,248,0.4),
-    0 20px 40px rgba(0,0,0,0.7);
+  /* 🔥 SHAPE BASED GLOW */
+  filter:
+    drop-shadow(0 0 15px rgba(56,189,248,0.8))
+    drop-shadow(0 0 35px rgba(56,189,248,0.5))
+    drop-shadow(0 20px 40px rgba(0,0,0,0.7));
 
   transition: transform 0.3s ease;
 }
