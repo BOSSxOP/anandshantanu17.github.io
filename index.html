@@ -38,13 +38,57 @@ nav {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
-.nav-logo { font-family: var(--display); font-weight: 800; font-size: 1.15rem; color: var(--text); text-decoration: none; }
-.nav-logo span { color: var(--accent2); }
-.nav-links { display: flex; gap: 2.2rem; list-style: none; }
-.nav-links a { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
-.nav-links a:hover, .nav-links a.active { color: var(--accent2); }
-.nav-cta { font-family: var(--mono); font-size: 0.78rem; padding: 0.45rem 1.1rem; border: 1px solid var(--accent); color: var(--accent2); text-decoration: none; border-radius: 4px; transition: background 0.2s, color 0.2s; }
-.nav-cta:hover { background: var(--accent); color: #fff; }
+
+.nav-logo {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--accent3); /* cyan */
+  text-decoration: none;
+}
+
+.nav-logo span {
+  color: var(--accent3); /* cyan */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--accent3); /* cyan */
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent); /* purple on hover */
+}
+
+.nav-cta {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--accent3); /* cyan border */
+  color: var(--accent3); /* cyan text */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-cta:hover {
+  background: var(--accent3); /* cyan fill */
+  color: #0a0a0f; /* dark background text */
+}
+
 
 /* HERO */
 #hero {
@@ -192,14 +236,14 @@ footer span { color: var(--accent2); }
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-logo">S<span>.</span>Anand</a>
+  <a href="#hero" class="nav-logo">Shantanu<span>.</span>Anand</a>
   <ul class="nav-links">
-    <li><a href="#about">about</a></li>
-    <li><a href="#skills">skills</a></li>
-    <li><a href="#experience">experience</a></li>
-    <li><a href="#projects">projects</a></li>
-    <li><a href="#awards">awards</a></li>
-    <li><a href="#contact">contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="mailto:shantanu02anand@gmail.com" class="nav-cta">hire_me()</a>
 </nav>
@@ -212,8 +256,8 @@ footer span { color: var(--accent2); }
     <span class="line2">Anand.</span>
   </h1>
   <p class="hero-role">
-    Turning <strong>500M+ row datasets</strong> into decisions at Deloitte USI.
-    Expert in <strong>Databricks · PySpark · SQL · Tableau</strong> across Healthcare, Life Sciences &amp; Technology domains.
+    Turning <strong> datasets</strong> into decisions at Deloitte USI.
+    Expert in <strong>Databricks · PySpark · SQL · Tableau</strong> across Healthcare, Life Sciences &amp; Technology clients.
   </p>
   <div class="hero-stats">
     <div class="stat-item">
